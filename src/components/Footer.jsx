@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import images from '@/constants/images'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -10,9 +12,9 @@ function Footer() {
         <h3 className="font-semibold text-lg mb-4">Company</h3>
         <ul className="space-y-2 text-center md:text-left">
           <Link href={'/about'}><li>About Us</li></Link>
-          <li>Careers</li>
-          <li>Newsroom</li>
-          <li>Blog</li>
+          <Link href={'/careers'}><li>Careers</li></Link>
+          <Link href={'/newsroom'}><li>Newsroom</li></Link>
+          <Link href={'/blog'}><li>Blog</li></Link>
         </ul>
       </div>
     </div>
@@ -21,10 +23,10 @@ function Footer() {
     <div className="w-full md:w-1/4 items-center md:items-start">
       <h3 className="font-semibold text-lg mb-4 text-center md:text-left">Driver</h3>
       <ul className="space-y-2 text-center md:text-left">
-        <li>Become a Driver</li>
-        <li>New Driver Guide</li>
-        <li>Earnings</li>
-        <li>Help</li>
+        <Link href={'/become-driver'}><li>Become a Driver</li></Link>
+        <Link href={'/new-driver-guide'}><li>New Driver Guide</li></Link>
+        <Link href={'/earnings'}><li>Earnings</li></Link>
+        <Link href={'/help'}><li>Help</li></Link>
       </ul>
     </div>
   
@@ -32,10 +34,10 @@ function Footer() {
     <div className="w-full md:w-1/4 items-center md:items-start">
       <h3 className="font-semibold text-lg mb-4 text-center md:text-left">Rider</h3>
       <ul className="space-y-2 text-center md:text-left">
-        <li>Rewards</li>
-        <li>Events</li>
-        <li>Gift Cards</li>
-        <li>Airports</li>
+        <Link href={'/rewards'}><li>Rewards</li></Link>
+        <Link href={'/events'}><li>Events</li></Link>
+        <Link href={'/gift-cards'}><li>Gift Cards</li></Link>
+        <Link href={'/airports'}><li>Airports</li></Link>
       </ul>
   
       {/* App Store and Play Store Icons */}
@@ -54,13 +56,13 @@ function Footer() {
           height={40}
           className="border-2 border-white rounded-md"
         />
-        </div>
       </div>
+    </div>
   
-      {/* Footer Note */}
-      {/* Uncomment and edit if needed */}
-      {/* <p className="text-center text-sm mt-10">&copy; 2024 Cabjak Inc.</p> */}
-      </footer>
+    {/* Footer Note */}
+    {/* Uncomment and edit if needed */}
+    {/* <p className="text-center text-sm mt-10">&copy; 2024 Cabjak Inc.</p> */}
+    </footer>
   )
 }
 

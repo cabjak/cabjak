@@ -12,10 +12,7 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);  
   };
 
-  useEffect(() => {
-    alert("This is only for demo.......still in update")
-  }, [])
-  
+
 
   return (
 

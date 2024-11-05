@@ -11,9 +11,6 @@ export default function Home() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);  
   };
-
-
-
   return (
 
     <div className="w-full h-full flex flex-col bg-[#f5f5f5]">
